@@ -1,0 +1,24 @@
+/* Custom Stlying */ 
+
+body {
+    background-image: url("../images/crystalbackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tron {
+    font-family: 'Monoton', cursive;
+    background-color: aliceblue
+}
+
+.howto, .tscore, .cscore, .options, .wins, .losses {
+    font-family: 'Carter One', cursive;
+    background-color: aliceblue
+}
+
+
+.ins {
+    font-family: 'Fredericka the Great', cursive;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Reset CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Fredericka+the+Great|Monoton" rel="stylesheet">
+    <!--My Stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    
+</head>
+
+<body>
+    
+    <!--Title and Instructions-->
+    
+    <div class="container">
+        <div class="jumbotron mt-4 tron">
+            <h1 class= "text-center">Crystal Collector Game</h1>
+        </div>
+
+            <div class="card mb-4">
+                <div class="card-header howto">How to Play</div>
+                <div class="card-body ins">
+                        
+                    You will be given a "target score" at the start of the game.  
+                    There are four crystals below, each with its own numerical value which is discoverable upon click. 
+                    Each time you click a crystal its value will be added to your total score. 
+                    Your goal is to determine enough crystal values so you can match your total score to the "target score".
+                    
+                </div>
+                </div>
+
+
+        <!--Row containing Target Score, Current Score and Crystal Options-->
+    
+    <div class="row">
+
+        <!-- Target Score -->
+        
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <div class="card-header tscore"> Target Score </div>
+            <div class="card-body">
+              <h2 class="text-center" id="trgt-score"></h2> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Score -->
+        
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-header cscore"> Current Score </div>
+                <div class="card-body"> 
+                    <h2 class="text-center" id="current-score"> </h2>
+                    </div>
+                    </div>
+                    </div>
+
+         <!-- Crystal Options -->           
+        
+         <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header options"> Crystal Options </div>
+                <div class="card-body text-center"> 
+                            
+                    <img src="assets/images/green.jpg" id="greengem">
+                    <img src="assets/images/red.jpg" id="redgem">
+                    <img src="assets/images/yellow.jpg" id="yellowgem">
+                    <img src="assets/images/blue.jpg" id="bluegem">
+                            
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                
+        <!--Row containing Counters-->       
+        
+        <div class="row">
+                
+        <!--Counters--> 
+            
+            <div class="col-md-6">
+                <div class="card mb-4"> 
+                <div class="card-header wins"> Wins </div>
+                <div class="card-body">
+                    <h2 class="text-center" id="wins"> 0 </h2>
+                </div>
+                </div>
+                </div>
+        
+
+        
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                <div class="card-header losses"> Losses </div>
+                <div class="card-body">
+                    <h2 class="text-center" id="losses"> 0 </h2>
+                </div>
+                </div>
+                </div>
+        </div>
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Main Game Logic  -->
+        <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

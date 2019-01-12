@@ -1,7 +1,7 @@
 /* Custom Stlying */ 
 
 body {
-    background-image: url("../images/crystalbackground.jpg");
+    background-image: url("https://raw.githubusercontent.com/cloudnelg/Crystal-Collector-Game/master/assets/images/Crystalbackground.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
